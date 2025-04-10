@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva en dispositivos móviles -->
+    <title>Guatapé</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <!-- Importa el CSS de Bootstrap desde un CDN para estilos predefinidos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Contenedor principal con margen superior de 5 unidades -->
+    <div class="container mt-5">
+        <!-- Tarjeta con sombra grande y ancho máximo de 32rem, centrada con margin: auto -->
+        <div class="card shadow-lg" style="max-width: 32rem; margin: auto;">
+            <!-- Imagen en la parte superior de la tarjeta -->
+            <img src="https://adrenalinecolombia.com/wp-content/uploads/2021/11/colombia-2410603_1280.jpg" class="card-img-top" alt="Guatapé">
+            <!-- Cuerpo de la tarjeta donde va el contenido -->
+            <div class="card-body">
+                <!-- Título principal centrado con color primario y margen inferior -->
+                <h2 class="card-title text-primary text-center mb-4">Guatapé</h2>
+                <!-- Subtítulo pequeño centrado en texto muted -->
+                <p class="card-text text-muted text-center">Conoce Guatapé</p>
+                <!-- Descripción general centrada con margen inferior -->
+                <p class="card-text text-center mb-4">Guatapé es un municipio turístico de los Andes al noroeste de Colombia y al este de Medellín. Es famoso por sus casas decoradas con bajorrelieves de colores.</p>
+                
+                <!-- Navegación de pestañas usando el componente 'nav-tabs' de Bootstrap -->
+                <ul class="nav nav-tabs" id="guatapeTab" role="tablist">
+                    <!-- Pestaña de Ubicación (activa por defecto) -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="ubicacion-tab" data-bs-toggle="tab" data-bs-target="#ubicacion" type="button" role="tab">Ubicación</button>
+                    </li>
+                    <!-- Pestaña de Clima -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="clima-tab" data-bs-toggle="tab" data-bs-target="#clima" type="button" role="tab">Clima</button>
+                    </li>
+                    <!-- Pestaña de Actividades -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="actividades-tab" data-bs-toggle="tab" data-bs-target="#actividades" type="button" role="tab">Actividades</button>
+                    </li>
+                </ul>
+
+                <!-- Contenido de las pestañas -->
+                <div class="tab-content mt-3" id="guatapeTabContent">
+                    <!-- Panel de Ubicación (visible por defecto con 'show active') -->
+                    <div class="tab-pane fade show active" id="ubicacion" role="tabpanel">
+                        <div class="card-text">
+                            <h5 class="fw-bold text-primary">Ubicación</h5> <!-- Título en negrita y color primario -->
+                            <p>Oriente de Antioquia</p> <!-- Ubicación principal -->
+                            <p class="text-muted">Cerca del embalse artificial de Peñol-Guatapé, al este de Medellín</p> <!-- Detalle adicional en texto muted -->
+                        </div>
+                    </div>
+                    <!-- Panel de Clima (oculto hasta que se seleccione la pestaña) -->
+                    <div class="tab-pane fade" id="clima" role="tabpanel">
+                        <div class="card-text">
+                            <h5 class="fw-bold text-info">Clima</h5> <!-- Título en negrita y color info -->
+                            <p>Temperatura promedio: 16°C</p> <!-- Temperatura -->
+                            <p class="text-muted">Clima templado típico de la región andina</p> <!-- Detalle adicional -->
+                        </div>
+                    </div>
+                    <!-- Panel de Actividades -->
+                    <div class="tab-pane fade" id="actividades" role="tabpanel">
+                        <div class="card-text">
+                            <h5 class="fw-bold text-success">Actividades</h5> <!-- Título en negrita y color success -->
+                            <!-- Lista de actividades usando el componente 'list-group' de Bootstrap -->
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Natación</li> <!-- Elemento de la lista -->
+                                <li class="list-group-item">Buceo</li>
+                                <li class="list-group-item">Pesca</li>
+                                <li class="list-group-item">Senderismo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón centrado con margen superior y ancho del 50% -->
+                <div class="text-center mt-4">
+                    <a href="https://www.google.com/search?q=informacion+de+guatape" class="btn btn-primary w-50">VER MÁS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importa el JavaScript de Bootstrap desde un CDN (necesario para las pestañas) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
